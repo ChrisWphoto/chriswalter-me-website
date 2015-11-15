@@ -10,7 +10,7 @@ var writer;
 
 var writerStarted = false
 var waypoint = new Waypoint({
-  element: document.getElementById('resumebtn'),
+  element: document.getElementById('contactDetails'),
   handler: function() {
     if (!writerStarted) {
       writer = new Writer('display-text', welcomeMessages.welcome2, .5);
