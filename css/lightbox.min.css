@@ -24,6 +24,7 @@
 #ui-lightbox-content>* {
 	display:block;
 	position:absolute;
+	width: 500px;
 	z-index:100;
 }
 #ui-lightbox-arrow {

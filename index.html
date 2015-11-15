@@ -49,7 +49,9 @@
       <h2>CS Student - Aspiring Software Engineer - Photographer </h2> <br/>
 
     </div>
-    <span style="position:absolute; width:100%; text-align:center; bottom:15%;  "> El Salar de Uyuni - Bolivia - Project NCS </span>
+    <span style="position:absolute; width:100%; text-align:center; bottom:15%;">
+      El Salar de Uyuni - Bolivia - Project NCS
+    </span>
 
     <!--menu start-->
     <div class="menu">
@@ -65,10 +67,10 @@
                   <ul class="nav navbar-nav">
                     <li class="menuItem active"><a href="#wrapper">Home</a></li>
                     <li class="menuItem"><a href="#aboutme">About</a></li>
-                    <li class="menuItem"><a href="#technical">Project1</a></li>
-                    <li class="menuItem"><a href="#contactDetails">Project2</a></li>
-                    <li class="menuItem"><a href="#education">Project2</a></li>
-                    <li class="menuItem"><a href="#protfolio">Portfolio</a></li>
+                    <li class="menuItem"><a href="#technical">Ionic</a></li>
+                    <li class="menuItem"><a href="#contactDetails">Javascript</a></li>
+                    <li class="menuItem"><a href="#education">Python</a></li>
+                    <li class="menuItem"><a href="#protfolio">Photography</a></li>
                     <li class="menuItem"><a href="#contact">Contact</a></li>
                   </ul>
                 </div>
@@ -91,10 +93,29 @@
       <div class="row">
         <div class=" col-xs-12 col-sm-12 col-md-7 col-lg-7">
 
-          <span style="width:100%; text-align:center;"><h3>Chris Walter </h3>
-          <h4 class="subHeading" style="font-size:15px;"> Currently Looking for spring/summer 2016 internships</h4>
-          <p>Welcome to my portfolio site! That's me over there on the right with my favorite person in the whole world LeAnna.
-            Scroll down to see my recent projects  </p>
+          <span style="width:100%; text-align:center;">
+
+            <h3>Chris Walter</h3>
+
+            <h4 class="subHeading" style="font-size:15px;"> Currently Looking for
+              spring/summer 2016 internships <br/>
+              <span style="font-size:14px;"> Graduating from UMKC in December 2016
+                GPA 4.0 </span>
+            </h4>
+
+            <p>Thank you for taking the time to checkout my work! Below you will
+              find some of my recent software and photography
+              projects. I came to computer science after volunteering and working
+              in saftey net clinic and realizing the enourmous opportunity of
+              software to positively impact people's lives.
+            </p>
+
+            <p> Since that time I have been aggresively building my skill set
+              in web and mobile application development.</p>
+
+
+
+
           </span>
             <h4>Software Classes</h4>
             <ul id="class-list">
@@ -115,14 +136,34 @@
   <section class="technical" id="technical">
     <div class="container">
       <div class="heading">
-        <h2>Project 1</h2>
-        <p>Hybrid App using Ionic</p>
+        <h2>Ionic</h2>
+        <p>A Hybrib IOS/Android</p>
       </div>
       <div class=" col-xs-12 col-sm-12 col-md-6 col-lg-6">
-        <h3>Flosi - PhotoStream Challenge</h3>
-        <p>Challenge your friends to a head to head batter. Each person has to
-          has to upload photos of proving their progress and the person with
-            most photos wins</p>
+        <h3>Flosi</h3>
+
+        <p>
+          I am building Flosi to solve this problem: How can I get one-to-one
+          support from my friends to help my achieve my goals?
+        </p>
+
+        <p>
+          The idea is to challenge a friend to do something with you, like
+          to meditate daily or study or whatever. You set a specific number of
+          photos that need to be posted by each person in a set timeframe.
+          The photos are your proof that you are working goal and it's a fun
+          and private way for your friend to support you through the whole
+          process.
+        </p>
+
+        <p>
+          I am currently developing this using the Ionic Framework which combines
+          Cordova and AngularJS to build hybrid apps that can run natively on
+          IOS or Android.
+        </p>
+
+        Check out all the code on
+        <a href="https://github.com/ChrisWphoto/ionic-Flosi" target="_blank" class="chris-link"> Github</a>.
 
       </div>
 
@@ -132,7 +173,7 @@
         <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width: 250px; margin:0 auto;">
 
           <!-- Indicators -->
-          <ol class="carousel-indicators">
+          <ol class="carousel-indicators" id="trip-relive">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
@@ -141,12 +182,20 @@
 
           <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox" >
-            <div class="item active" style="background: none; width: 250px;">
+            <div class="item active" style="background: none; width: 254px;">
               <img src="images/chris/flosiIphone.png" >
             </div>
 
-            <div class="item"  style="background: none; width: 250px;">
-              <img src="images/chris/flosiIphone.png" >
+            <div class="item"  style="background: none; width: 254px;">
+              <img src="images/chris/flosiIphone2.png" >
+            </div>
+
+            <div class="item"  style="background: none; width: 254px;">
+              <img src="images/chris/flosiIphone3.png" >
+            </div>
+
+            <div class="item"  style="background: none; width: 254px;">
+              <img src="images/chris/flosiIphone4.png" >
             </div>
 
           </div>
@@ -161,29 +210,30 @@
 
     <div class="container">
       <div class="heading">
-        <h2> Project 2</h2>
+        <h2>Javascript</h2>
         <p>Pure Javascript Typewriter App </p>
       </div>
 
       <div class="project-container">
         <div class=" col-xs-12 col-sm-12 col-md-6 col-lg-6">
-          <h3>Send messages exactly like you typed them.</h3>
-          <p> This is a fun little app that listens for keystrokes inside of the
-            text area over there. It then replays the message using the timestamps
-            between keystrokes to match your original speed and tempo. Check out
-            the code snippet below or find all the code on github.  </p>
+          <h3 id="header-journal-text"> </h3>
+          <p id="paragraph-journal-text"> </p>
 
         </div>
       <!-- Project Journal Start - cw -->
       <div class=" col-xs-12 col-sm-12 col-md-6 col-lg-6">
-        <div class="right-Journal">
-          <h2 id="journal-logo" style="margin-bottom: 15px;text-transform: lowercase;"> <span style="color:rgba(64, 150, 238, 1);">re</span>live journal</h2>
+        <div class="right-Journal" style="text-align:center;">
+          <h2 id="journal-logo" > <span style="color:rgba(64, 150, 238, 1);">re</span>live journal</h2>
 
           <textarea id="journal-text" name="one"  rows="4" placeholder="Your message goes here :) "></textarea>
           <div id="display-text"> </div> <br/>
 
-          <button class="journal-btn" id="playBtn" onclick="toggleWriteText('display-text', 'playBtn')">Play Text</button>
-          <button class="journal-btn" id="resetBtn" onclick="reset()"> Clear</button>
+          <button class="journal-btn" id="playBtn"
+            onclick="toggleWriteText('display-text', 'playBtn')">Play Text
+          </button>
+          <button class="journal-btn" id="resetBtn" onclick="reset()">
+            Clear</button>
+
       </div>
       </div>
       <!-- Project Journal end - cw -->
@@ -197,7 +247,7 @@
   <section class="education" id="education">
     <div class="container">
       <div class="heading">
-        <h2>Project 3</h2>
+        <h2>Python</h2>
         <p>Tracking Spending by Scraping Mint.com</p>
       </div>
       <div class="row workDetails">
@@ -205,14 +255,15 @@
         <h2>Grocery Spending Tracker</h2><br/>
         <p>My Family had a problem, we were spending $2,000 per month on groceries!
           One month we made 62 trips grocery stores. This is crazy,
-          especially when we have a costco membership</p>
-        <p>That where this micro app comes in, I added this page <a href="http://dreamtoreality.net/app" style="color:rgba(64, 150, 238, 1);">
+          especially when we have a Costco membership</p>
+        <p>That's where this micro app comes in, I added this the <a href="http://dreamtoreality.net/app" target="_blank" class="chris-link">
           Grocery Tracker</a> to everyone's iphone homescreen. Now everyone
-          in the family can check how much we are spending by tapping the icon on their phone. </p>
+          in the family can check how much we are spending by tapping the icon
+         on there phone, no logging in required!</p>
 
-        <p> This app uses a python library mintapi to scrape mint.com.
-          The spending ammount is then uploaded to firebase where it is passed
-          to an AgularJS add and displayed at the above link.</p><br/>
+        <p> This app uses the python library mintapi to scrape mint.com.
+          The retrieved spending ammount is then uploaded to firebase where it
+          is passed to an AgularJS app and displayed at the above link.</p><br/>
 
         <div class="codeShow" style="height:400px; overflow:auto;">
         <pre> <code class="language-python" >
@@ -224,8 +275,8 @@ from datetime import datetime
 import time
 
 #Grab Credentials
-os.environ.get('USERNAME')
-os.environ.get('PASSWORD')
+username = os.environ.get('USERNAME')
+password = os.environ.get('PASSWORD')
 
 #open text file for logging
 loop_num = 1
@@ -242,7 +293,7 @@ while True:
         break
 
     # Get Grocery Spending
-    mint = mintapi.Mint(, '59305930Pp')
+    mint = mintapi.Mint(username, password)
     budgets = mint.get_budgets()
 
     groceries_name = budgets['spend'][5]['cat']['name']
@@ -295,29 +346,80 @@ log.close()
   <section class="protfolio" id="protfolio">
     <div class="container" style="max-width: 1200px">
       <div class="heading">
-        <h2>Portfolio</h2>
-        <p>showcase of my latest works</p>
+        <h2>Photography</h2>
+        <p>From Canada to Argentina and everywhere inbetween</p>
       </div>
       <div class="portfolioFilter">
         <ul>
           <li><a href="#" data-filter="*" class="current">All</a></li>
-          <li><a href="#" data-filter=".photos">Photos</a></li>
-          <li><a href="#" data-filter=".branding">Branding</a></li>
-          <li><a href="#" data-filter=".illustration">Illustration</a></li>
+          <li><a href="#" data-filter=".photos">Personal</a></li>
+          <li><a href="#" data-filter=".branding">Professional</a></li>
+          <!-- <li><a href="#" data-filter=".illustration">Illustration</a></li> -->
         </ul>
       </div>
       <ul class="portfolioContainer row">
+
         <li class="photos col-xs-6 col-sm-4 col-md-3 col-lg-3">
-          <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/portfolio/big/1.jpg" title="Project Title1" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a> <a href="#" title="Project Link" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a> </span> </span> <img src="http://placehold.it/450x450&text=image1" alt=""  > </div>
+          <div class="lightCon">
+            <span class="hoverBox">
+              <span class="smallIcon">
+                <a rel="lightbox-demo" href="images/portfolio/big/ap.jpg"
+                  title="Norwegian Traveler- Columbia" class="zoom lb lb_warsaw1">
+                  <i class="fa fa-search fa-2x">
+                  </i>
+                </a>
+              </span>
+            </span>
+            <img src="images/portfolio/thumb/ap.jpg" alt="" >
+          </div>
         </li>
-        <li class="branding illustration col-xs-6 col-sm-4 col-md-3 col-lg-3">
-          <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/portfolio/big/2.jpg" title="Project Title2" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a> <a href="#" title="Project Link" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a> </span> </span> <img src="http://placehold.it/450x450&text=image2" alt="" > </div>
+
+        <li class="photos col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <div class="lightCon">
+            <span class="hoverBox">
+              <span class="smallIcon">
+                <a rel="lightbox-demo" href="images/portfolio/big/apbig1.jpg"
+                  title="Standing outside his house - Belize" class="zoom lb lb_warsaw1">
+                  <i class="fa fa-search fa-2x">
+                  </i>
+                </a>
+              </span>
+            </span>
+            <img src="images/portfolio/thumb/ap1.jpg" alt="" >
+          </div>
         </li>
-        <li class="illustration col-xs-6 col-sm-4 col-md-3 col-lg-3">
-          <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/portfolio/big/3.jpg" title="Project Title3" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a> <a href="#" title="Project Link" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a> </span> </span> <img src="http://placehold.it/450x450&text=image3" alt="" > </div>
+
+
+        <li class="photos col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <div class="lightCon">
+            <span class="hoverBox">
+              <span class="smallIcon">
+                <a rel="lightbox-demo" href="images/portfolio/big/apbig1.jpg"
+                  title="Standing outside his house - Belize" class="zoom lb lb_warsaw1">
+                  <i class="fa fa-search fa-2x">
+                  </i>
+                </a>
+              </span>
+            </span>
+            <img src="images/portfolio/thumb/ap1.jpg" alt="" >
+          </div>
         </li>
+
+
         <li class="branding illustration col-xs-6 col-sm-4 col-md-3 col-lg-3">
           <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/portfolio/big/4.jpg" title="Project Title4" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a> <a href="#" title="Project Link" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a> </span> </span> <img src="http://placehold.it/450x450&text=image4" alt="" > </div>
+        </li>
+        <li class="illustration photos col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/portfolio/big/5.jpg" title="Project Title5" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a> <a href="#" title="Project Link" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a> </span> </span> <img src="http://placehold.it/450x450&text=image5" alt="" > </div>
+        </li>
+        <li class="branding photos col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/portfolio/big/6.jpg" title="Project Title6" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a> <a href="#" title="Project Link" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a> </span> </span> <img src="http://placehold.it/450x450&text=image6" alt="" > </div>
+        </li>
+        <li class="illustration photos col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/portfolio/big/7.jpg" title="Project Title7" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a> <a href="#" title="Project Link" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a> </span> </span> <img src="http://placehold.it/450x450&text=image7" alt="" > </div>
+        </li>
+        <li class="branding col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/portfolio/big/8.jpg" title="Project Title8" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a> <a href="#" title="Project Link" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a> </span> </span> <img src="http://placehold.it/450x450&text=image8" alt="" > </div>
         </li>
         <li class="illustration photos col-xs-6 col-sm-4 col-md-3 col-lg-3">
           <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/portfolio/big/5.jpg" title="Project Title5" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a> <a href="#" title="Project Link" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a> </span> </span> <img src="http://placehold.it/450x450&text=image5" alt="" > </div>
@@ -340,7 +442,7 @@ log.close()
     <div class="container topCon">
       <div class="heading">
         <h2>Get In Touch</h2>
-        <p>Please feel free if you would like to have a chat.</p>
+        <p>walter.chris@gmail.com - 816.728.6142</p>
       </div>
     </div>
 

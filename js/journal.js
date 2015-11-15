@@ -6,15 +6,15 @@ var listoner  = new journalListener('journal-text');
 listoner.startListening;
 
 
-var writer;
+var  welcomeWiter, writer;
 
 var writerStarted = false
 var waypoint = new Waypoint({
-  element: document.getElementById('contactDetails'),
+  element: document.getElementById('trip-relive'),
   handler: function() {
     if (!writerStarted) {
-      writer = new Writer('display-text', welcomeMessages.welcome2, .5);
-      writer.write();
+      welcomeWiter = new Writer('header-journal-text', welcomeMessages.welcome2, .5);
+      welcomeWiter.write();
       writerStarted = true;
     }
   }
@@ -22,14 +22,14 @@ var waypoint = new Waypoint({
 
 
 function toggleWriteText(htmlId, btnId){
-  writer.cleanup();
+  if (writer) writer.cleanup();
   writer = new Writer(htmlId, listoner.getLog(), 1);
   writer.write();
 }
 
 function reset() {
   listoner.reset();
-  writer.cleanup();
+  if (writer) writer.cleanup();
   document.getElementById('journal-text').value = '';
   document.getElementById('display-text').innerHTML = '';
 }
@@ -170,12 +170,13 @@ function Writer(htmlid, log, rateMultiplier){
   }
 
   function addClassNames(id){
+    console.log(target);
 
     if (strArrayIdx < strArray.length && currentKeycode != 8){
 
-      document.getElementsByClassName(id.toString())[0].className ="cursor";
-      document.getElementsByClassName(id.toString())[0].className ="shake";
-      document.getElementsByClassName(id.toString())[0].className ="highlight";
+      target.getElementsByClassName(id.toString())[0].className ="cursor";
+      target.getElementsByClassName(id.toString())[0].className ="shake";
+      target.getElementsByClassName(id.toString())[0].className ="highlight";
 
     }
   }

@@ -62,6 +62,10 @@
 	margin: 15px auto;
 }
 
+.chris-link {
+	color:rgba(64, 150, 238, 1);
+}
+
 
 #class-list {
 	position: relative;
@@ -70,24 +74,27 @@
 
 .project-container{
 	width: auto;
-	text-align: center;
+	/*text-align: center;*/
+}
+.contactDetails .project-container .col-lg-6 .col-sm-6 p{
+	font-size: 22px;
+
 }
 
-.project-container {
-	width: auto;
-	/*color: rgb(132, 75, 75);*/
-	text-align: center;
-}
 
 .right-journal {
 	margin: 0 auto;
 	width: 100%;
+	text-align: center;
 	word-wrap: break-word;
+
 }
 
+
 #journal-logo {
-	font-size: 52px;
+	font-size: 32px;
 	text-align: center;
+	margin-bottom: 15px;text-transform: lowercase;
 }
 
 #journal-text {
@@ -115,7 +122,8 @@
   background-color: rgba(64, 150, 238, 1);
   border-radius: 10%;
   border: none;
-  margin: 10px;
+  margin: 10px auto;
+
 }
 
 @keyframes shake {
@@ -1161,8 +1169,8 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 	padding-bottom:15px;
 }
 .contactDetails p{
-	color:#93959c;
-	font-size:13px;
+	color:rgb(200, 200, 200);
+	font-size:15px;
 	line-height:19px;
 	padding-bottom:14px;
 }
