@@ -43,15 +43,56 @@
 
 @media screen and (max-width: 768px) {
 	#headerBg {background-position: center;}
+}
 
+.container {
+	max-width: 1024px;
 }
 
 .carousel .slide .carousel-inner .item {
 	background-color: none;
 }
 
-.container {
-	max-width: 1024px;
+.aboutme-footer{
+	width: 100%;
+	text-align: center;
+	background-color: rgb(71, 77, 93);
+}
+
+.aboutme-footer ul{
+	margin:0 auto;
+	text-align:center;
+	list-style-type:none;
+}
+.aboutme-footer ul li{
+	display:inline-block;
+	text-align:center;
+	line-height:32px;
+	margin:0 4px;
+	width:32px !important;
+	height:32px !important;
+
+	-webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.aboutme-footer ul li a{
+	width:42px !important;
+	height:42px !important;
+}
+
+.aboutme-footer ul li a i{
+	line-height:42px !important;
+}
+
+.three-things {
+	color:#111;
+	font-weight: bold;
+	font-size: 28px;
+	text-align: center;
+	width: auto;
+	top:50%;
+	margin-top: 20px;
 }
 
 .img-about {
@@ -59,7 +100,7 @@
 	height:320px;
 	border-radius: 50%;
 	border: solid white;
-	margin: 15px auto;
+	/*margin: 0px auto;*/
 }
 
 .chris-link {
@@ -81,7 +122,6 @@
 
 }
 
-
 .right-journal {
 	margin: 0 auto;
 	width: 100%;
@@ -89,7 +129,6 @@
 	word-wrap: break-word;
 
 }
-
 
 #journal-logo {
 	font-size: 32px;
@@ -183,6 +222,14 @@
   100% {border-right: solid 3px rgba(64, 150, 238, .8);}
 }
 
+#git-link {
+	width: 100%;
+	text-align: center;
+}
+
+#git-link a {
+	color: rgba(64, 150, 238, 1);
+}
 
 /*
 <---- Chris Walter added Style end ---->
@@ -629,9 +676,12 @@ header{
 	font-size:16px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight:700;
-	background:#474d5d;
+	/*background:#474d5d;*/
+	background: rgb(255, 103, 95);
 	padding:16px 22px;
 	display:inline-block;
+	margin: 20px auto;
+
 }
 .bntDownload:hover{
 	background:#373d4c;
